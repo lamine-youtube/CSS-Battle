@@ -1,0 +1,172 @@
+<div class="container">
+  <div class="fork-head">
+    <div class="fork-teeth">
+      <div>
+        <div>
+          <div></div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div></div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div></div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div></div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div></div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div></div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div></div>
+        </div>
+      </div>
+      <div class="color"></div>
+    </div>
+    <div class="head-part"></div>
+    <div class="head-body">
+      <div></div>
+    </div>
+  </div>
+
+  <div class="fork-handel"></div>
+</div>
+
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    background: #6592cf;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 35%;
+    height: 100%;
+    padding-top: 25%;
+  }
+
+  .fork-head {
+    width: 100%;
+    height: 65%;
+  }
+
+  .fork-teeth {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    position: relative;
+  }
+
+  .fork-teeth .color {
+    width: 100%;
+    height: 55%;
+    background: #060f55;
+
+    position: absolute;
+    bottom: 0;
+    z-index: -10;
+  }
+
+  .fork-teeth > div {
+    flex: 1;
+    height: 100%;
+    display: flex;
+  }
+
+  .fork-teeth > div:nth-child(odd) div {
+    background: #060f55;
+  }
+
+  .fork-teeth > div:nth-child(odd) > div {
+    align-self: flex-end;
+  }
+
+  .fork-teeth > div:nth-child(odd) > div > div {
+    top: -10%;
+  }
+
+  .fork-teeth > div:nth-child(even) div {
+    background: #6592cf;
+  }
+
+  .fork-teeth > div:nth-child(even) > div > div {
+    bottom: -10%;
+  }
+  
+  .fork-teeth > div > div {
+    width: 100%;
+    height: 92%;
+    position: relative;
+  }
+
+  .fork-teeth > div > div > div {
+    width: 100%;
+    background: yellow;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .fork-teeth > div > div > div::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  .head-part {
+    width: 100%;
+    height: 17%;
+    background: #060f55;
+  }
+
+  .head-body {
+    width: 100%;
+    height: 30%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .head-body > div {
+    width: 100%;
+    border-radius: 100%;
+    background: #060f55;
+
+    position: absolute;
+    bottom: 0;
+  }
+  .head-body > div::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  .fork-handel {
+    width: 14%;
+    height: 20%;
+    background: #060f55;
+    margin: 0 auto;
+  }
+</style>
